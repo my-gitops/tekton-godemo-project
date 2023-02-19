@@ -21,7 +21,6 @@ FROM alpine
 ENV TZ Asia/Shanghai
 
 WORKDIR /opt
-
 COPY --from=builder /opt/app /opt/app
 
 CMD ["/opt/app"]
